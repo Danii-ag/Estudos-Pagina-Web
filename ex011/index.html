@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou aumente e diminua o seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/img-p.png" type="image/png">
+
+        <source media="(max-width: 1050px )" srcset="imagens/img-m.png" type="image/png">
+        <!-- essa linha de código significa que se minha largura (width) for menor que 1050px a imagem M será carregada no lugar da G-->
+
+        <img src="imagens/img-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reproduzindo áudio</h2>
+    <p>Vamos aprender a reproduzir áudio em HTML</p>
+    <audio src="audio/Smoke - Lish Grooves.mp3" controls autoplay></audio>
+    <!-- Outra maneira de colocar áudio em um site é 
+    <audio>
+        <source src="audio/Smoke-Lish Grooves.mp3" type="audio/mp3">
+    </audio>-->
+</body>
+</html>
